@@ -1,7 +1,6 @@
 import os
 import soundfile as sf
 from opt import parser_opt
-from const.path import INPUT_PATH, OUPUT_PATH
 
 
 def convert_caf_to_wav(input_path, output_path):
@@ -19,13 +18,9 @@ def main(args):
 
                 os.makedirs(output_dir, exist_ok=True)
 
-                print(input_path, output_path)
                 convert_caf_to_wav(input_path, output_path)
 
 
 if __name__ == '__main__':
-    default_in = INPUT_PATH
-    default_out = OUPUT_PATH
-    args = parser_opt(default_in, default_out)
-    print(args)
+    args = parser_opt()
     main(args)
