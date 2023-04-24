@@ -6,8 +6,8 @@ Supported bellow
 
 # Setup
 ```
-git clone https://github.com/ta-ke-inf/conf-txt2csv.git
-cd conf-txt2csv
+git clone https://github.com/ta-ke-inf/ConvenientConvert.git
+cd ConvenientConvert
 pip install -r requirements.txt
 ```
 # Run
