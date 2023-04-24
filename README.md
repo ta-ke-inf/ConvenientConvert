@@ -19,4 +19,4 @@ python yolo_txt2csv.py -i ./in -o ./out/output.csv
 |  option  |  type  |  default  |  description  |
 |  ------  |  ----  |  -------  |  -----------  |
 |    -i, --input    |    str   |  ./in  |   Path to input folder or file            |
-|    -o, --output    |    str   |  ./out/output.csv  |   Path to output folder or file            |
+|    -o, --output    |    str   |  ./out  |   Path to output folder or file            |
