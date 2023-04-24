@@ -1,5 +1,7 @@
-# conf-txt2csv
-Confidence scores of txt files to csv format
+# Convenient Convert
+Supported bellow
+- Confidence scores of txt files(yolo output) to csv format
+- Caf to Wave
 
 
 # Setup
@@ -10,10 +12,11 @@ pip install -r requirements.txt
 ```
 # Run
 ```
-python main.py -i ./in -o ./out/output.csv
+python yolo_txt2csv.py -i ./in -o ./out/output.csv
+            caf2wav.py            ./out
 ```
 
 |  option  |  type  |  default  |  description  |
 |  ------  |  ----  |  -------  |  -----------  |
-|    -i, --input    |    str   |  ./in  |   Path of the folder where the txt file output from yolo resides            |
-|    -o, --output    |    str   |  ./out/output.csv  |   Path where the csv file to be written exists            |
+|    -i, --input    |    str   |  ./in  |   Path to input folder or file            |
+|    -o, --output    |    str   |  ./out/output.csv  |   Path to output folder or file            |
