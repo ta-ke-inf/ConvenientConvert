@@ -1,7 +1,7 @@
 import os
 import csv
 from natsort import natsorted
-from opt import parse_opt
+from opt import parser_opt
 from typing import List, Tuple
 
 
@@ -71,5 +71,5 @@ def main(args):
 
 
 if "__main__" == __name__:
-    args = parse_opt()
+    args = parser_opt()
     main(args)
