@@ -16,9 +16,9 @@ def main(args):
             if filename.endswith('.caf'):
                 input_path = os.path.join(root, filename)
                 output_path = input_path.replace(input_dir, output_dir).replace('.caf', '.wav')
-                output_dir = os.path.dirname(output_path)
+                write_dir = os.path.dirname(output_path)
 
-                os.makedirs(output_dir, exist_ok=True)
+                os.makedirs(write_dir, exist_ok=True)
 
                 convert_caf_to_wav(input_path, output_path)
 
